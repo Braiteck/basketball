@@ -2798,6 +2798,14 @@ aside
 /*-------------
     Banners
 -------------*/
+.banners.bg
+{
+    padding: 64px 0;
+
+    background: #2e363d;
+}
+
+
 .banners .row
 {
     margin-bottom: -16px;
@@ -2811,7 +2819,17 @@ aside
     margin-left: 16px;
 }
 
+.banners .row > *
+{
+    width: calc(33.333% - 16px);
+}
+
 .banners .row > *.big_w
+{
+    width: calc(66.666% - 16px);
+}
+
+.banners .row > *.bigest_w
 {
     width: calc(75% - 16px);
 }
@@ -2866,6 +2884,11 @@ aside
     text-transform: uppercase;
 
     background: url(../images/bg_banner_sticker.svg) 0 0 no-repeat;
+}
+
+.banners.bg .banner .sticker
+{
+    background: url(../images/bg_banner_sticker_dark.svg) 0 0 no-repeat;
 }
 
 
@@ -3824,52 +3847,472 @@ aside
 /*------------
     Footer
 ------------*/
-footer .info
+footer
 {
-    padding: 40px 0;
+    padding: 32px 0;
 
-    background: #000;
+    background: #2e363d;
 }
 
-footer .info .cont
+
+footer .cont
 {
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
 
+footer .cont + .cont
+{
+    margin-top: 48px;
+}
 
 
-/*-----------
-    PopUp
------------*/
-.modal
+
+footer .subscribe
+{
+    position: relative;
+
+    display: flex;
+
+    width: 816px;
+    max-width: 100%;
+    padding: 32px 32px 23px;
+
+    border-radius: 12px;
+    background: #444f5a;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+footer .subscribe .notice
+{
+    color: #fff;
+
+    position: absolute;
+    top: -12px;
+    left: -12px;
+
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #fa7047;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .subscribe .notice .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+footer .subscribe .title
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+
+footer .subscribe form
+{
+    position: relative;
+}
+
+
+footer .subscribe form ::-webkit-input-placeholder
+{
+    color: #fff;
+}
+
+footer .subscribe form :-moz-placeholder
+{
+    color: #fff;
+}
+
+footer .subscribe form :-ms-input-placeholder
+{
+    color: #fff;
+}
+
+
+footer .subscribe form .icon
+{
+    color: #fff;
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    display: flex;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 6px;
+    background: #2e363d;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .subscribe form .icon svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+footer .subscribe form .input
+{
+    color: #fff;
+    font-size: 18px;
+
+    display: block;
+
+    width: 100%;
+    height: 72px;
+    padding: 0 79px;
+
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 12px;
+    background: none;
+}
+
+
+footer .subscribe form .submit_btn
+{
+    color: #fff;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+
+    width: 56px;
+    height: 56px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .subscribe form .submit_btn svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+footer .subscribe form .agree
+{
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+footer .subscribe form .agree input[type=checkbox]
 {
     display: none;
-    visibility: visible !important;
+}
 
-    width: 480px;
+footer .subscribe form .agree label
+{
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    line-height: 16px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 16px;
+    padding-left: 20px;
+
+    cursor: pointer;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+footer .subscribe form .agree label a
+{
+    color: currentColor;
+
+    transition: color .2s linear;
+}
+
+footer .subscribe form .agree label a:hover
+{
+    color: #fff;
+}
+
+
+footer .subscribe form .agree label:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    content: '';
+
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 3px;
+}
+
+
+footer .subscribe form .agree label .check
+{
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 16px;
+    height: 16px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .subscribe form .agree label .check svg
+{
+    display: block;
+
+    width: 9px;
+    height: 7px;
+}
+
+
+footer .subscribe form .agree input[type=checkbox]:checked + label .check
+{
+    opacity: 1;
+}
+
+
+
+footer .data
+{
+    width: 256px;
+    margin-right: 96px;
+    margin-left: auto;
+}
+
+
+footer .logo img
+{
+    display: block;
+
     max-width: 100%;
-    padding: 40px 50px;
-
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 
-.modal_title
+footer .phone
 {
-    font-size: var(--font_size_title);
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+
+    margin-top: 28px;
+    margin-left: 16px;
+}
+
+footer .phone a
+{
+    color: currentColor;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+footer .email
+{
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+footer .email a
+{
+    color: currentColor;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    border-bottom: 1px dotted;
+}
+
+
+
+footer .menu .item + .item
+{
+    margin-left: 32px;
+}
+
+
+footer .menu .item > a
+{
+    color: #fff;
+    font-size: var(--font_size);
     font-weight: 700;
-    line-height: normal;
+    line-height: 16px;
 
+    display: flex;
+
+    transition: color .2s linear;
     text-align: center;
+    text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
-.modal_desc
+footer .menu .item .circle
 {
-    margin-top: 24px;
+    display: flex;
+
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+
+    border: 1px solid;
+    border-radius: 50%;
+    box-shadow: inset 0 0 2px currentColor, 0 0 2px currentColor;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .menu .item .circle span
+{
+    display: block;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: inherit;
+    background: currentColor;
+}
+
+
+footer .menu .item:hover > a,
+footer .menu .item > a.active
+{
+    color: #fa7047;
+}
+
+
+footer .menu .item > a.red
+{
+    color: #f82253;
+}
+
+
+
+footer .instagram_link
+{
+    margin-right: 96px;
+    margin-left: auto;
+}
+
+
+footer .instagram_link
+{
+    color: #fff;
+    font-weight: 700;
+    line-height: 16px;
+
+    display: flex;
+
+    padding: 16px 20px 16px 16px;
 
     text-align: center;
+    text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    border-radius: 12px;
+    background: #fa7047;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .instagram_link .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+footer .instagram_link span
+{
+    margin: 0 33px;
+}
+
+
+
+footer .copyright
+{
+    color: #fff;
+    line-height: 16px;
+
+    width: 100%;
+    margin-top: 40px;
+
+    opacity: .5;
 }
