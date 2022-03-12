@@ -2819,7 +2819,7 @@ aside
     margin-left: 16px;
 }
 
-.banners .row > *
+.banners .row > *.middle_w
 {
     width: calc(33.333% - 16px);
 }
