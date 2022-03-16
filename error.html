@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#FA7047">
+		<meta name="theme-color" content="#FA7047">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<nav class="menu row">
+									<div class="item">
+										<a href="/" class="red">
+											<div class="circle"><span></span></div>
+											<span>Live</span>
+										</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Лиги</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Статистика</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Расписание</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Новости</a>
+									</div>
+								</nav>
+
+								<div class="search modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+											<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+											<button type="button" class="close_btn">
+												<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+											</button>
+										</form>
+									</div>
+								</div>
+
+								<div class="account">
+									<a href="/" class="login_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_login"></use></svg>
+										<span>Войти</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<sectoin class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_slider_arrow"></use></svg>
+							<span class="current">Страница не найдена</span>
+						</div>
+					</div>
+				</sectoin>
+
+
+				<section class="error_info">
+					<div class="cont row">
+						<div class="data">
+							<div class="title">Страница<br> не найдена</div>
+
+							<div class="desc">Извините, страница к которой вы обращаетесь не существует или устарела</div>
+
+							<div class="btns">
+								<div><a href="/" class="btn bg">на главную</a></div>
+								<div><a href="/" class="btn">Расписание игр</a></div>
+							</div>
+						</div>
+
+						<div class="code">
+							<img src="images/error404.png" alt="" class="lozad">
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="subscribe">
+						<div class="notice">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+						</div>
+
+						<div class="title">Не пропустите предстоящие<br> матчи и другие события</div>
+
+						<form action="">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+							</div>
+
+							<input type="email" name="" value="" class="input" placeholder="Ваша почта">
+
+							<button type="submit" class="submit_btn">
+								<svg><use xlink:href="images/sprite.svg#ic_send"></use></svg>
+							</button>
+
+							<div class="agree">
+								<input type="checkbox" name="agree" id="agree_check" checked>
+								<label for="agree_check">
+									<div class="check">
+										<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+									</div>
+
+									<div>Я соглашаюсь с условиями <a href="/" target="_blank">политики конфиденциальности</a></div>
+								</label>
+							</div>
+						</form>
+					</div>
+
+					<div class="data">
+						<div class="logo">
+							<img src="images/logo2.svg" alt="">
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<div><a href="tel:+74959358928">+7 (495) 935-89-28</a></div>
+							</div>
+
+							<div class="email">
+								<div><a href="mailto:info@basketball-league.ru">info@basketball-league.ru</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="cont row">
+					<div class="menu row">
+						<div class="item">
+							<a href="/" class="red">
+								<div class="circle"><span></span></div>
+								<span>Live</span>
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Лиги</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Статистика</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Расписание</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Новости</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Документы</a>
+						</div>
+
+						<div class="item">
+							<a href="/">Контакты</a>
+						</div>
+					</div>
+
+
+					<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+						<span>Наш Instagram</span>
+					</a>
+
+
+					<div class="copyright">&copy; 2022. Basketball-League</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

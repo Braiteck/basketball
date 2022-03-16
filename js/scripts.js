@@ -60,19 +60,91 @@ $(() => {
 
 
 	// Фильтр
+	if ($('.filter .type input:checked + label').length) {
+		let filterActivePosition = $('.filter .type input:checked + label').position().left
+
+		$('.filter .type .roller').css('transform', `translateX(${filterActivePosition}px)`)
+	}
+
 	$('.filter .type label').click(function () {
 		let newPosition = $(this).position().left
 
 		$('.filter .type .roller').css('transform', `translateX(${newPosition}px)`)
 	})
 
+	$('.filter select').change(function () {
+		let parent = $(this).closest('.item')
+
+		parent.addClass('active')
+	})
+
+	$('.filter .item .clear_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.item')
+
+		parent.removeClass('active').find('select').val(0).niceSelect('update');
+	})
+
 
 	// Турнирная таблица - Лиги
+	if ($('.leaderboard .leagues .btn.active').length) {
+		let leaderboardActivePosition = $('.leaderboard .leagues .btn.active').position().left
+
+		$('.leaderboard .leagues .roller').css('transform', `translateX(${leaderboardActivePosition}px)`)
+	}
+
 	$('.leaderboard .leagues .btn').click(function () {
 		let newPosition = $(this).position().left
 
 		$('.leaderboard .leagues .roller').css('transform', `translateX(${newPosition}px)`)
 	})
+
+
+	// Форма - Пароль
+	$('.form .view_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$(this).hasClass('active')
+			? $(this).closest('.field').find('.input').attr('type', 'text')
+			: $(this).closest('.field').find('.input').attr('type', 'password')
+	})
+
+
+	// Таймер
+	$('.timer').each(function () {
+		let timerDate = $(this).data('date')
+
+		$(this).countdown(timerDate, function (event) {
+			$(this).find('.days .val').text(event.strftime('%D'))
+			$(this).find('.hours .val').text(event.strftime('%H'))
+			$(this).find('.minutes .val').text(event.strftime('%M'))
+		})
+	})
+
+
+	// Статистика
+	if ($('.statistics .leagues .btn.active').length) {
+		let statisticsActivePosition = $('.statistics .leagues .btn.active').position().left
+
+		$('.statistics .leagues .roller').css('transform', `translateX(${statisticsActivePosition}px)`)
+	}
+
+	$('.statistics .leagues .btn').click(function () {
+		let newPosition = $(this).position().left
+
+		$('.statistics .leagues .roller').css('transform', `translateX(${newPosition}px)`)
+	})
+
+
+	// Страница лиги
+	if ($('.leagues_links .btn.active').length) {
+		let leagueActivePosition = $('.leagues_links .btn.active').position().left
+
+		$('.leagues_links .roller').css('transform', `translateX(${leagueActivePosition}px)`)
+	}
 
 
 	// Моб. меню
@@ -97,6 +169,21 @@ $(() => {
 
 
 
+$(window).on('load', () => {
+	// Статьи
+	let articles = $('.articles .grid'),
+		articlesGutter = parseInt(articles.css('--articles_gutter'))
+
+	masonry = articles.masonry({
+		percentPosition: true,
+		gutter: articlesGutter,
+		itemSelector: '.masonry_item',
+		columnWidth: articles.find('.article').width()
+	})
+})
+
+
+
 $(window).on('resize', () => {
 	if (typeof WW !== 'undefined' && WW != $(window).width()) {
 		// Моб. версия
@@ -108,6 +195,20 @@ $(window).on('resize', () => {
 		} else {
 			fiestResize = false
 		}
+
+
+		// Статьи
+		setTimeout(() => {
+			let articles = $('.articles .grid'),
+				articlesGutter = parseInt(articles.css('--articles_gutter'))
+
+			masonry = articles.masonry({
+				percentPosition: true,
+				gutter: articlesGutter,
+				itemSelector: '.masonry_item',
+				columnWidth: articles.find('.article').width()
+			})
+		})
 
 
 		// Перезапись ширины окна
