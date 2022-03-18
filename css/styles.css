@@ -61,8 +61,8 @@
     font-style: normal;
 
     font-display: swap;
-    src: url('../fonts/DrukWideSuper.woff') format('woff'),
-    url('../fonts/DrukWideSuper.ttf') format('truetype');
+    src: url('../fonts/DrukWide-Bold.woff') format('woff'),
+    url('../fonts/DrukWide-Bold.ttf') format('truetype');
 }
 
 
@@ -1112,7 +1112,9 @@ header .account .login_btn span
     display: none;
 
     width: 100%;
-    padding: 16px 0;
+    padding: 12px 0;
+
+    background: #fff;
 }
 
 
@@ -1139,6 +1141,136 @@ header .account .login_btn span
 .mob_header .logo img
 {
     display: block;
+
+    height: 56px;
+}
+
+
+
+.mob_header .search
+{
+    position: static;
+}
+
+.mob_header .search .btn
+{
+    color: #2e363d;
+
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_header .search .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.mob_header .search .mini_modal
+{
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    margin-top: 0;
+}
+
+
+.mob_header .search form
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_header .search form ::-webkit-input-placeholder
+{
+    color: #000;
+}
+
+.mob_header .search form :-moz-placeholder
+{
+    color: #000;
+}
+
+.mob_header .search form :-ms-input-placeholder
+{
+    color: #000;
+}
+
+.mob_header .search form .icon
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin: auto;
+
+    pointer-events: none;
+}
+
+.mob_header .search form .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 16px;
+
+    display: block;
+
+    width: 100%;
+    height: 48px;
+    padding: 0 47px 0 43px;
+
+    border: 1px solid transparent;
+    background: #ecedee;
+    box-shadow: 0 1px 0 #fff, inset 0 1px 0 rgba(0, 0, 0, .03);
+}
+
+.mob_header .search form .close_btn
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 12px;
+    bottom: 0;
+
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_header .search form .close_btn svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -1152,7 +1284,7 @@ header .account .login_btn span
     width: 44px;
     height: 34px;
     margin-right: -8px;
-    margin-left: 24px;
+    margin-left: 16px;
     padding: 8px;
 
     justify-content: center;
@@ -2151,7 +2283,7 @@ aside .last_articles .article .name a
     height: 152px;
     margin: 12px 0;
 
-    background: url(../images/bg_play_btn.png) 0 0 no-repeat;
+    background: url(../images/bg_play_btn.png) 0 0/100% 100% no-repeat;
 
     justify-content: center;
     align-items: center;
@@ -2506,7 +2638,7 @@ aside .last_articles .article .name a
     color: #576573;
 
     position: absolute;
-    z-index: 9;
+    z-index: 3;
     top: 0;
     bottom: 0;
     left: 16px;
@@ -2526,9 +2658,6 @@ aside .last_articles .article .name a
 
 .filter .nice-select
 {
-    position: relative;
-    z-index: 3;
-
     display: block;
 }
 
@@ -2632,7 +2761,7 @@ aside .last_articles .article .name a
     color: #576573;
 
     position: absolute;
-    z-index: 9;
+    z-index: 5;
     top: 2px;
     right: 16px;
     bottom: 0;
@@ -3203,7 +3332,7 @@ aside .last_articles .article .name a
 
     width: calc(25% - 1px);
     height: calc(100% - 4px);
-    margin: auto;
+    margin: 2px 0 0;
 
     transition: transform .2s linear;
     transform: translateX(2px);
@@ -3614,6 +3743,14 @@ aside .last_articles .article .name a
     flex-wrap: wrap;
 }
 
+.players .player .photo img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .players .player .info
 {
@@ -3771,7 +3908,9 @@ aside .last_articles .article .name a
 {
     position: relative;
 
+    display: flex;
     overflow: hidden;
+    flex-direction: column;
 
     min-height: 256px;
 
@@ -3808,6 +3947,8 @@ aside .last_articles .article .name a
     display: flex;
     overflow: hidden;
 
+    width: 100%;
+    height: 256px;
     margin-bottom: 16px;
     padding: 24px 24px 0;
 
@@ -3830,7 +3971,6 @@ aside .last_articles .article .name a
 
 .articles .article .thumb.dark
 {
-    height: 256px;
     margin: 0;
 }
 
@@ -3879,6 +4019,8 @@ aside .last_articles .article .name a
 .articles .article .info
 {
     padding: 46px 56px 32px 32px;
+
+    flex: 1 0 auto;
 }
 
 
@@ -4096,6 +4238,49 @@ aside .last_articles .article .name a
 {
     color: #576573;
     font-weight: 700;
+
+    position: relative;
+
+    padding-right: 8px;
+}
+
+.articles .matche .teams .score .val.wins:after
+{
+    color: #576573;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 6px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+
+    border-top: 4px solid transparent;
+    border-right: 6px solid;
+    border-bottom: 4px solid transparent;
+}
+
+.articles .matche .teams .score .val + .val.wins
+{
+    padding-right: 0;
+    padding-left: 8px;
+}
+
+.articles .matche .teams .score .val + .val.wins:after
+{
+    right: auto;
+    left: 0;
+
+    border: none;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid;
 }
 
 
@@ -4249,7 +4434,7 @@ aside .last_articles .article .name a
 
 .contacts_info .data .info .items > * + *
 {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 
@@ -5157,6 +5342,8 @@ aside .last_articles .article .name a
 -----------------*/
 .matche_info .data
 {
+    overflow: hidden;
+
     padding: 8px;
 
     border-radius: 12px;
@@ -5312,6 +5499,7 @@ aside .last_articles .article .name a
     z-index: 3;
 
     display: flex;
+    overflow: hidden;
 
     min-height: 536px;
     padding: 106px 72px;
@@ -6242,7 +6430,7 @@ aside .last_articles .article .name a
 
     width: calc(25% - 1px);
     height: calc(100% - 4px);
-    margin: auto;
+    margin: 0;
 
     transition: transform .2s linear;
     transform: translateX(2px);
@@ -6630,7 +6818,7 @@ aside .last_articles .article .name a
 }
 
 
-.team_info .logo
+.team_info .data > .logo
 {
     display: flex;
 
@@ -6644,7 +6832,7 @@ aside .last_articles .article .name a
     flex-wrap: wrap;
 }
 
-.team_info .logo img
+.team_info .data > .logo img
 {
     display: block;
 
@@ -7147,6 +7335,9 @@ footer .subscribe .title
 footer .subscribe form
 {
     position: relative;
+
+    width: 392px;
+    max-width: 100%;
 }
 
 

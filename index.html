@@ -103,7 +103,24 @@
 				<section class="mob_header">
 					<div class="cont row">
 						<div class="logo">
-							<img src="images/logo.png" alt="">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="button" class="close_btn">
+										<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									</button>
+								</form>
+							</div>
 						</div>
 
 						<button class="mob_menu_btn">
@@ -1015,259 +1032,261 @@
 
 
 									<div class="tab_content level1 active" id="leaderboard_tab1_1">
-										<div class="titles">
-											<div class="col_position down">
-												<span>Позиция</span>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_sort"></use></svg>
+										<div class="table_wrap">
+											<div class="titles">
+												<div class="col_position down">
+													<span>Позиция</span>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_sort"></use></svg>
+												</div>
+
+												<div class="col_team">Команда</div>
+												<div class="col_games">И</div>
+												<div class="col_wins">В</div>
+												<div class="col_defeats">П</div>
+												<div class="col_scores">С</div>
+												<div class="col_points">О</div>
 											</div>
 
-											<div class="col_team">Команда</div>
-											<div class="col_games">И</div>
-											<div class="col_wins">В</div>
-											<div class="col_defeats">П</div>
-											<div class="col_scores">С</div>
-											<div class="col_points">О</div>
-										</div>
-
-										<div class="lines">
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="default"></span>
-													</div>
-												</div>
-
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo3.png" alt="">
+											<div class="lines">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="default"></span>
 														</div>
-														<span>Skylab</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="up"></span>
 													</div>
-												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo4.png" alt="">
-														</div>
-														<span>Supernova</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="down"></span>
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo3.png" alt="">
+															</div>
+															<span>Skylab</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
 													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo5.png" alt="">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="up"></span>
 														</div>
-														<span>Clones</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="default"></span>
 													</div>
-												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo3.png" alt="">
-														</div>
-														<span>Skylab</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="up"></span>
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo4.png" alt="">
+															</div>
+															<span>Supernova</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
 													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo4.png" alt="">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="down"></span>
 														</div>
-														<span>Supernova</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="down"></span>
 													</div>
-												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo5.png" alt="">
-														</div>
-														<span>Clones</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="default"></span>
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo5.png" alt="">
+															</div>
+															<span>Clones</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
 													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo3.png" alt="">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="default"></span>
 														</div>
-														<span>Skylab</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="up"></span>
 													</div>
-												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo4.png" alt="">
-														</div>
-														<span>Supernova</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="down"></span>
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo3.png" alt="">
+															</div>
+															<span>Skylab</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
 													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo5.png" alt="">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="up"></span>
 														</div>
-														<span>Clones</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
-												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
-											</div>
-
-											<div class="table_line">
-												<div class="col_position">
-													<span></span>
-													<div class="direction">
-														<span class="default"></span>
 													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo4.png" alt="">
+															</div>
+															<span>Supernova</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
 
-												<div class="col_team">
-													<a href="/">
-														<div class="logo">
-															<img src="images/tmp/team_logo3.png" alt="">
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="down"></span>
 														</div>
-														<span>Skylab</span>
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
-													</a>
+													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo5.png" alt="">
+															</div>
+															<span>Clones</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
 												</div>
-												<div class="col_games">18</div>
-												<div class="col_wins">10</div>
-												<div class="col_defeats">5</div>
-												<div class="col_scores">32 : 12</div>
-												<div class="col_points">28</div>
+
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="default"></span>
+														</div>
+													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo3.png" alt="">
+															</div>
+															<span>Skylab</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
+												</div>
+
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="up"></span>
+														</div>
+													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo4.png" alt="">
+															</div>
+															<span>Supernova</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
+												</div>
+
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="down"></span>
+														</div>
+													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo5.png" alt="">
+															</div>
+															<span>Clones</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
+												</div>
+
+												<div class="table_line">
+													<div class="col_position">
+														<span></span>
+														<div class="direction">
+															<span class="default"></span>
+														</div>
+													</div>
+
+													<div class="col_team">
+														<a href="/">
+															<div class="logo">
+																<img src="images/tmp/team_logo3.png" alt="">
+															</div>
+															<span>Skylab</span>
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+														</a>
+													</div>
+													<div class="col_games">18</div>
+													<div class="col_wins">10</div>
+													<div class="col_defeats">5</div>
+													<div class="col_scores">32 : 12</div>
+													<div class="col_points">28</div>
+												</div>
 											</div>
 										</div>
 

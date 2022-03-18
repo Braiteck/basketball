@@ -89,15 +89,15 @@ $(() => {
 
 	// Турнирная таблица - Лиги
 	if ($('.leaderboard .leagues .btn.active').length) {
-		let leaderboardActivePosition = $('.leaderboard .leagues .btn.active').position().left
+		let leaderboardActivePosition = $('.leaderboard .leagues .btn.active').position()
 
-		$('.leaderboard .leagues .roller').css('transform', `translateX(${leaderboardActivePosition}px)`)
+		$('.leaderboard .leagues .roller').css('transform', `translate(${leaderboardActivePosition.left}px, ${leaderboardActivePosition.top}px`)
 	}
 
 	$('.leaderboard .leagues .btn').click(function () {
-		let newPosition = $(this).position().left
+		let leaderboardActivePosition = $(this).position()
 
-		$('.leaderboard .leagues .roller').css('transform', `translateX(${newPosition}px)`)
+		$('.leaderboard .leagues .roller').css('transform', `translate(${leaderboardActivePosition.left}px, ${leaderboardActivePosition.top}px`)
 	})
 
 
@@ -127,23 +127,23 @@ $(() => {
 
 	// Статистика
 	if ($('.statistics .leagues .btn.active').length) {
-		let statisticsActivePosition = $('.statistics .leagues .btn.active').position().left
+		let statisticsActivePosition = $('.statistics .leagues .btn.active').position()
 
-		$('.statistics .leagues .roller').css('transform', `translateX(${statisticsActivePosition}px)`)
+		$('.statistics .leagues .roller').css('transform', `translate(${statisticsActivePosition.left}px, ${statisticsActivePosition.top}px`)
 	}
 
 	$('.statistics .leagues .btn').click(function () {
-		let newPosition = $(this).position().left
+		let statisticsActivePosition = $(this).position()
 
-		$('.statistics .leagues .roller').css('transform', `translateX(${newPosition}px)`)
+		$('.statistics .leagues .roller').css('transform', `translate(${statisticsActivePosition.left}px, ${statisticsActivePosition.top}px`)
 	})
 
 
 	// Страница лиги
 	if ($('.leagues_links .btn.active').length) {
-		let leagueActivePosition = $('.leagues_links .btn.active').position().left
+		let leagueActivePosition = $('.leagues_links .btn.active').position()
 
-		$('.leagues_links .roller').css('transform', `translateX(${leagueActivePosition}px)`)
+		$('.leagues_links .roller').css('transform', `translate(${leagueActivePosition.left}px, ${leagueActivePosition.top}px)`)
 	}
 
 
