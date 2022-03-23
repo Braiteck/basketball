@@ -3,18 +3,6 @@ $(() => {
 	if (!is_touch_device() || !/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) $('html').addClass('custom_scroll')
 
 
-	// Ленивая загрузка
-	setTimeout(() => {
-		observer = lozad('.lozad', {
-			rootMargin: '200px 0px',
-			threshold: 0,
-			loaded: el => el.classList.add('loaded')
-		})
-
-		observer.observe()
-	}, 200)
-
-
 	// Установка ширины стандартного скроллбара
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
