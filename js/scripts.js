@@ -87,6 +87,12 @@ $(() => {
 	})
 
 
+	// Календарь
+	new AirDatepicker('.input.date', {
+		autoClose: true
+	})
+
+
 	// Турнирная таблица - Лиги
 	if ($('.leaderboard .leagues .btn.active').length) {
 		let leaderboardActivePosition = $('.leaderboard .leagues .btn.active').position()

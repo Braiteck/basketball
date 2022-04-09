@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -151,7 +152,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -2331,9 +2332,9 @@ aside .last_articles .article .name a
     content: '';
 
     opacity: .3;
-    background:    -moz-linear-gradient(left,  rgba(251,76,24,.3) 0%, rgba(251,76,24,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(251,76,24,.3) 0%,rgba(251,76,24,1) 100%);
-    background:         linear-gradient(to right,  rgba(251,76,24,.3) 0%,rgba(251,76,24,1) 100%);
+    background:    -moz-linear-gradient(left, rgba(251, 76, 24, .3) 0%, rgba(251, 76, 24, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(251, 76, 24, .3) 0%, rgba(251, 76, 24, 1) 100%);
+    background:         linear-gradient(to right, rgba(251, 76, 24, .3) 0%, rgba(251, 76, 24, 1) 100%);
 }
 
 .upcoming_matches .stats .item + .item:after
@@ -2564,6 +2565,22 @@ aside .last_articles .article .name a
 }
 
 
+.filter ::-webkit-input-placeholder
+{
+    color: #576573;
+}
+
+.filter :-moz-placeholder
+{
+    color: #576573;
+}
+
+.filter :-ms-input-placeholder
+{
+    color: #576573;
+}
+
+
 .filter .item
 {
     position: relative;
@@ -2635,6 +2652,27 @@ aside .last_articles .article .name a
     margin: auto;
 
     pointer-events: none;
+}
+
+
+.filter .input
+{
+    color: #576573;
+    font-family: var(--font_family);
+    font-size: 16px;
+
+    display: block;
+
+    width: 100%;
+    height: 48px;
+    padding: 0 35px 0 39px;
+
+    transition: .2s linear;
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #ecedee;
+    box-shadow: 0 1px 0 #fff, inset 0 1px 0 rgba(0, 0, 0, .03);
 }
 
 
@@ -3842,7 +3880,7 @@ aside .last_articles .article .name a
     width: 100%;
     padding-top: 19px;
 
-    border-top: 1px solid rgba(255,255,255,.1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
 
     justify-content: space-between;
     align-items: center;
@@ -4757,9 +4795,9 @@ aside .last_articles .article .name a
 
     content: '';
 
-    background:    -moz-linear-gradient(left,  rgba(250,112,71,0) 0%, rgba(250,112,71,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(250,112,71,0) 0%,rgba(250,112,71,1) 100%);
-    background:         linear-gradient(to right,  rgba(250,112,71,0) 0%,rgba(250,112,71,1) 100%);
+    background:    -moz-linear-gradient(left, rgba(250, 112, 71, 0) 0%, rgba(250, 112, 71, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(250, 112, 71, 0) 0%, rgba(250, 112, 71, 1) 100%);
+    background:         linear-gradient(to right, rgba(250, 112, 71, 0) 0%, rgba(250, 112, 71, 1) 100%);
 }
 
 .calendar .matche .teams .match_of_the_day:after
@@ -5450,9 +5488,9 @@ aside .last_articles .article .name a
     content: '';
 
     opacity: .3;
-    background:    -moz-linear-gradient(left,  rgba(251,76,24,0) 0%, rgba(251,76,24,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(251,76,24,0) 0%,rgba(251,76,24,1) 100%);
-    background:         linear-gradient(to right,  rgba(251,76,24,0) 0%,rgba(251,76,24,1) 100%);
+    background:    -moz-linear-gradient(left, rgba(251, 76, 24, 0) 0%, rgba(251, 76, 24, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(251, 76, 24, 0) 0%, rgba(251, 76, 24, 1) 100%);
+    background:         linear-gradient(to right, rgba(251, 76, 24, 0) 0%, rgba(251, 76, 24, 1) 100%);
 }
 
 .matche_info .stats .item + .item:after
@@ -5656,7 +5694,7 @@ aside .last_articles .article .name a
     padding: 80px 44px 64px;
 
     border-radius: 12px;
-    background: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, .5);
 }
 
 
@@ -5933,7 +5971,7 @@ aside .last_articles .article .name a
     padding: 56px 8px 8px;
 
     border-radius: 12px;
-    background: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, .5);
 }
 
 
@@ -7386,7 +7424,7 @@ footer .subscribe form .input
     height: 72px;
     padding: 0 79px;
 
-    border: 1px solid rgba(255,255,255,.3);
+    border: 1px solid rgba(255, 255, 255, .3);
     border-radius: 12px;
     background: none;
 }
@@ -7434,7 +7472,7 @@ footer .subscribe form .agree input[type=checkbox]
 
 footer .subscribe form .agree label
 {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-size: 12px;
     line-height: 16px;
 
@@ -7480,7 +7518,7 @@ footer .subscribe form .agree label:before
 
     content: '';
 
-    border: 1px solid rgba(255,255,255,.5);
+    border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 3px;
 }
 
